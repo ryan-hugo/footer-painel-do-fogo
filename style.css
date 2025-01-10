@@ -1,14 +1,14 @@
 :root{
-    
+
     --footer-background-color: linear-gradient(90deg, rgba(253, 195, 0, 1) 0%, rgba(220, 88, 28, 1) 35%, rgba(199, 59, 33, 1) 100%);
     --margin-wrapper: 10px;
-    --footer-heigth: 150px;
+    --footer-heigth: 350px;
     --footer-width: 90%;
     --font-size: 14px;
 
 
     --footer-height-calc: calc(var(--footer-heigth)/2);
-    --footer-logos-width: calc(var(--footer-width) - 75%);
+    --footer-logos-width: calc(var(--footer-width) - 70%);
     --footer-logos-height: calc(var(--footer-width) - var(--footer-height-calc));
 
     --footer-links-fontsize: clamp(1rem, 1vw, 2.5rem);
@@ -49,10 +49,8 @@
 }
 
 .footer__links{
-    display: flex;
-    width: 600px;
-    justify-content: space-around;
-
+    display: list-items;
+    width: 200px;
 }
 
 .footer__link{
@@ -61,6 +59,7 @@
 
 .footer__socials{
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     width: 200px;
     font-size: var(--footer-links-fontsize);
