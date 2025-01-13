@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root{
 
     --footer-background-color: linear-gradient(90deg, rgba(253, 195, 0, 1) 0%, rgba(220, 88, 28, 1) 35%, rgba(199, 59, 33, 1) 100%);
@@ -17,47 +19,72 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
     font-size: var(--font-size);
+    letter-spacing: 1px;
 }
 
 .footer{
-    background-color: purple;
-    overflow: hidden;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    color: white;
 }
 
 .footer__wrapper{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
-    width: var(--footer-width);
-    height: var(--footer-heigth);
-    /* background-color: aqua; */
+    background: var(--footer-background-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3.5rem;
 }
 
 .footer__logos{
     height: var(--footer-logos-height);
-    display: flex;
-    justify-content: space-around;
-    width: var(--footer-logos-width);
-    height: var(--footer-logos-height);
 }
 
-.footer__links{
+.footer__logos_links{
     display: flex;
+    gap: 20px;
+}
+
+.footer__logos_link{
+    color: white;
+    text-decoration: none;
+}
+
+.footer__list-navigation{
+    text-decoration: none;
+    list-style: none;
 }
 
 .footer__link{
-    font-size: var(--footer-links-fontsize);
+    transition: all 0.4s;
+}
+.footer__link:hover{
+    color: rgb(190, 185, 185);
 }
 
-.footer__link-socials{
+.footer__socials_links{
     display: flex;
+    flex-direction: row;
     font-size: var(--footer-links-fontsize);
     height: var(--footer-links-fontsize);
+    gap: 15px;
+    
 }
+
+.footer__socials-link{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s;
+}
+
+#footer__facebook:hover{
+    color: blue;
+}
+#footer__instagram:hover{
+    color: palevioletred;
+}
+#footer__twitter:hover{
+    color: black;
+}
+
