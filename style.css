@@ -35,6 +35,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 3rem 3.5rem;
+    justify-items: center;
 }
 
 .footer__logos{
