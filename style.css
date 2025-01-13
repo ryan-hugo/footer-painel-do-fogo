@@ -43,6 +43,7 @@
 .footer__titles{
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 350;
+    letter-spacing: 2px;
 }
 
 /* ---- BLOCO LOGOS ---- */
@@ -72,7 +73,7 @@
 
 .footer__list_link{
     transition: all 0.4s;
-    font-weight: 100;
+    font-weight: 250;
 }
 .footer__list_link:hover{
     color: rgb(190, 185, 185);
