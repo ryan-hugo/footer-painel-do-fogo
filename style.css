@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
 
     --footer-background-color: linear-gradient(90deg, rgba(253, 195, 0, 1) 0%, rgba(220, 88, 28, 1) 35%, rgba(199, 59, 33, 1) 100%);
@@ -19,7 +21,6 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Inter', sans-serif;
     box-sizing: border-box;
     font-size: var(--font-size);
     letter-spacing: 1px;
@@ -33,44 +34,64 @@
 .footer__wrapper{
     background: var(--footer-background-color);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     padding: 3rem 3.5rem;
     justify-items: center;
 }
 
+
+.footer__titles{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 350;
+}
+
+/* ---- BLOCO LOGOS ---- */
+
 .footer__logos{
-    /* height: var(--footer-logos-height); */
     display: flex;
+    flex-direction: row;
 }
 
 .footer__logos_links img{
-    height: 100px;
+    height: 140px;
 }
 
 .footer__logos_link{
     color: white;
     text-decoration: none;
-    margin: 20px;
+    margin: 30px;
 }
+
+/* ---- BLOCO LISTAS ---- */
 
 .footer__list_links{
     text-decoration: none;
     list-style: none;
+    font-family: 'Inter', sans-serif;
 }
 
-.footer__link{
+.footer__list_link{
     transition: all 0.4s;
+    font-weight: 100;
 }
-.footer__link:hover{
+.footer__list_link:hover{
     color: rgb(190, 185, 185);
 }
+
+
+
+/* BLOCO REDES SOCIAIS */
 
 .footer__socials_links{
     display: flex;
     flex-direction: row;
     height: var(--footer-links-fontsize);
-    gap: 35px;
+    gap: 45px;
     
+}
+
+.footer__socials_links i{
+    font-size: 22px;
 }
 
 .footer__socials_link{
@@ -88,4 +109,3 @@
 #footer__twitter:hover{
     color: black;
 }
-
