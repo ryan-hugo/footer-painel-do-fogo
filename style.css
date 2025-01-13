@@ -39,17 +39,18 @@
 }
 
 .footer__logos{
-    height: var(--footer-logos-height);
+    /* height: var(--footer-logos-height); */
+    display: flex;
 }
 
-.footer__logos_links{
-    display: flex;
-    gap: 20px;
+.footer__logos_links img{
+    height: 100px;
 }
 
 .footer__logos_link{
     color: white;
     text-decoration: none;
+    margin: 20px;
 }
 
 .footer__list-navigation{
@@ -67,13 +68,12 @@
 .footer__socials_links{
     display: flex;
     flex-direction: row;
-    font-size: var(--footer-links-fontsize);
     height: var(--footer-links-fontsize);
-    gap: 15px;
+    gap: 35px;
     
 }
 
-.footer__socials-link{
+.footer__socials_link{
     text-decoration: none;
     color: white;
     transition: all 0.4s;
